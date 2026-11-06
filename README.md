@@ -8,15 +8,14 @@ A API Node mantém o contrato operacional de clientes, produtos e pedidos. Este 
 
 ## Executar
 
-Requer JDK 21 e Maven.
+Requer JDK 21 e Maven. Suba a API principal em outro terminal antes de consultar o resumo.
 
 ```bash
 mvn test
-mvn package
-COREERP_API_URL=http://localhost:3000 java -jar target/coreerp-backend-java-0.1.0.jar
+mvn exec:java
 ```
 
-O serviço Java escuta na porta 8082. `COREERP_API_URL` aponta para a API principal.
+O serviço Java escuta na porta 8082. `COREERP_API_URL` pode apontar para outro endereço da API; por padrão usa `http://localhost:3000`.
 
 ## Rotas
 
